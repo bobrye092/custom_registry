@@ -3,7 +3,7 @@ requires = ["hatchling >= 1.13.0"]
 build-backend = "hatchling.build"
 
 [project]
-name = "custom_registry"
+name = "tracecat_registry"
 description = "Tracecat managed actions and integrations registry."
 readme = "README.md"
 requires-python = ">=3.12"
