@@ -5,8 +5,8 @@ from typing import Annotated
 
 from pydantic import Field
 
-from tracecat_registry import RegistrySecret, registry
-from tracecat_registry.integrations.boto3 import get_session
+from custom_registry import RegistrySecret, registry
+from custom_registry.integrations.boto3 import get_session
 
 # Add this at the top with other constants
 BUCKET_REGEX = re.compile(r"^[a-z0-9][a-z0-9.-]*[a-z0-9]$")
@@ -44,7 +44,7 @@ Secret
     default_title="Parse S3 URI",
     description="Parse an S3 URI into a bucket and key.",
     display_group="AWS S3",
-    namespace="integrations.aws_s3",
+    namespace="integrations.custom.aws_s3",
 )
 async def parse_uri(uri: str) -> tuple[str, str]:
     uri = str(uri).strip()
@@ -63,7 +63,7 @@ async def parse_uri(uri: str) -> tuple[str, str]:
     default_title="Download S3 Object",
     description="Download an object from S3 and return its body as a string.",
     display_group="AWS S3",
-    namespace="integrations.aws_s3",
+    namespace="integrations.custom.aws_s3",
     secrets=[s3_secret],
 )
 async def download_object(

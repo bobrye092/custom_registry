@@ -10,7 +10,7 @@ import orjson
 from google.oauth2 import service_account
 from pydantic import Field
 
-from tracecat_registry import RegistrySecret, registry, secrets
+from custom_registry import RegistrySecret, registry, secrets
 
 google_api_secret = RegistrySecret(
     name="google_api",
@@ -30,7 +30,7 @@ Note: `GOOGLE_API_CREDENTIALS` should be a JSON string of the service account cr
     default_title="Get Google API service account token",
     description="Get a service account token for Google API calls.",
     display_group="Google API",
-    namespace="integrations.google_api",
+    namespace="integrations.custom.google_api",
     secrets=[google_api_secret],
 )
 def get_auth_token(

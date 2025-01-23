@@ -8,7 +8,7 @@ from typing import Annotated, Any, TypedDict
 from pydantic import Field
 from typing_extensions import Doc
 
-from tracecat_registry import registry
+from custom_registry import registry
 
 
 class Member(TypedDict):

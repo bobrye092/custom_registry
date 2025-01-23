@@ -3,7 +3,7 @@ from typing import Annotated, Any, Literal
 from pydantic import Field
 from tracecat.identifiers import WorkflowID
 
-from tracecat_registry import RegistryActionError, registry
+from custom_registry import RegistryActionError, registry
 
 
 @registry.register(

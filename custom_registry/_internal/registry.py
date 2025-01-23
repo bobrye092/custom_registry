@@ -1,8 +1,8 @@
 from collections.abc import Callable
 from typing import ParamSpec, TypeVar
 
-from tracecat_registry._internal.constants import DEFAULT_NAMESPACE
-from tracecat_registry._internal.models import RegistrySecret
+from custom_registry._internal.constants import DEFAULT_NAMESPACE
+from custom_registry._internal.models import RegistrySecret
 
 P = ParamSpec("P")
 R = TypeVar("R")

@@ -15,7 +15,7 @@ import nh3
 from pydantic import Field
 from tracecat.config import TRACECAT__ALLOWED_EMAIL_ATTRIBUTES
 
-from tracecat_registry import RegistrySecret, registry, secrets
+from custom_registry import RegistrySecret, registry, secrets
 
 SAFE_EMAIL_PATTERN = re.compile(r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$")
 

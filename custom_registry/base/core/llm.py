@@ -7,7 +7,7 @@ from typing import Annotated, Any, Literal
 from pydantic import Field
 from tracecat.llm import DEFAULT_MODEL_TYPE, route_llm_call
 
-from tracecat_registry import RegistrySecret, registry
+from custom_registry import RegistrySecret, registry
 
 DEFAULT_SYSTEM_CONTEXT = "You will be provided with a body of text and your task is to do exactly as instructed."
 

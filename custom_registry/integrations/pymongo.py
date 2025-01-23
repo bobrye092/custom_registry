@@ -6,7 +6,7 @@ from pydantic import Field
 from pymongo import MongoClient
 from pymongo.cursor import Cursor
 
-from tracecat_registry import RegistrySecret, registry, secrets
+from custom_registry import RegistrySecret, registry, secrets
 
 mongodb_secret = RegistrySecret(
     name="mongodb",
@@ -25,7 +25,7 @@ mongodb_secret = RegistrySecret(
     default_title="Perform MongoDB CRUD",
     description="Performs a MongoDB operation on a specified collection.",
     display_group="MongoDB",
-    namespace="integrations.mongodb",
+    namespace="integrations.custom.mongodb",
     secrets=[mongodb_secret],
 )
 async def perform_mongodb_crud(

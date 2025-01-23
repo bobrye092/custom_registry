@@ -8,7 +8,7 @@ from typing import Annotated, Any
 from pydantic import Field
 from tenable.nessus import Nessus
 
-from tracecat_registry import RegistrySecret, registry, secrets
+from custom_registry import RegistrySecret, registry, secrets
 
 tenable_secret = RegistrySecret(
     name="tenable_nessus",
@@ -28,7 +28,7 @@ tenable_secret = RegistrySecret(
     description="Call any Nessus API using the pyTenable library",
     display_group="Tenabl Nessus",
     doc_url="https://pytenable.readthedocs.io/en/stable/api/nessus/index.html",
-    namespace="integrations.tenable_nessus",
+    namespace="integrations.custom.tenable_nessus",
     secrets=[tenable_secret],
 )
 async def call_api(

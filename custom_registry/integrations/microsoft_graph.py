@@ -11,7 +11,7 @@ Docs:
 from msal import ConfidentialClientApplication
 from tracecat import __version__
 
-from tracecat_registry import RegistrySecret, registry, secrets
+from custom_registry import RegistrySecret, registry, secrets
 
 microsoft_graph_secret = RegistrySecret(
     name="microsoft_graph",
@@ -46,7 +46,7 @@ Note:
     default_title="Get Microsoft Graph auth token",
     description="Get an auth token for Microsoft Graph API calls from a confidential application.",
     display_group="Microsoft Graph",
-    namespace="integrations.microsoft_graph",
+    namespace="integrations.custom.microsoft_graph",
     secrets=[microsoft_graph_secret],
 )
 def get_auth_token() -> str:

@@ -10,10 +10,10 @@ except ImportError:
         "Could not import tracecat. Please install `tracecat` to use the registry."
     ) from None
 
-from tracecat_registry._internal import exceptions, registry, secrets
-from tracecat_registry._internal.exceptions import RegistryActionError
-from tracecat_registry._internal.logger import logger
-from tracecat_registry._internal.models import RegistrySecret
+from custom_registry._internal import exceptions, registry, secrets
+from custom_registry._internal.exceptions import RegistryActionError
+from custom_registry._internal.logger import logger
+from custom_registry._internal.models import RegistrySecret
 
 __all__ = [
     "registry",

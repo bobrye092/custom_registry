@@ -7,7 +7,7 @@ from typing import Annotated, Any
 from pydantic import Field
 from tracecat.expressions import functions
 
-from tracecat_registry import registry
+from custom_registry import registry
 
 
 @registry.register(

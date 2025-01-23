@@ -8,7 +8,7 @@ from typing import Annotated, Any, Literal, TypedDict
 import httpx
 from pydantic import Field, UrlConstraints
 
-from tracecat_registry import RegistrySecret, logger, registry, secrets
+from custom_registry import RegistrySecret, logger, registry, secrets
 
 RequestMethods = Literal["GET", "POST", "PUT", "PATCH", "DELETE"]
 JSONObjectOrArray = dict[str, Any] | list[Any]

@@ -5,7 +5,7 @@ from typing import Annotated, Any
 from falconpy import APIHarnessV2
 from pydantic import Field
 
-from tracecat_registry import RegistrySecret, registry, secrets
+from custom_registry import RegistrySecret, registry, secrets
 
 crowdstrike_secret = RegistrySecret(
     name="crowdstrike",
@@ -24,7 +24,7 @@ crowdstrike_secret = RegistrySecret(
     default_title="Call FalconPy command",
     description="Call any Crowdstrike API via FalconPy.",
     display_group="Crowdstrike",
-    namespace="integrations.crowdstrike",
+    namespace="integrations.custom.crowdstrike",
     secrets=[crowdstrike_secret],
 )
 async def call_falconpy_command(
