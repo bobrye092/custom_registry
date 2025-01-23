@@ -2,7 +2,7 @@
 
 import httpx
 
-from custom_registry import RegistrySecret, registry, secrets
+from tracecat_registry import RegistrySecret, registry, secrets
 
 checkpoint_secret = RegistrySecret(
     name="checkpoint",
@@ -26,7 +26,7 @@ checkpoint_secret = RegistrySecret(
     default_title="Get Check Point auth token",
     description="Get an auth token for Check Point API calls.",
     display_group="Check Point",
-    namespace="integrations.custom.check_point",
+    namespace="integrations.check_point",
     secrets=[checkpoint_secret],
 )
 async def get_auth_token() -> str:

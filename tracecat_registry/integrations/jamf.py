@@ -5,7 +5,7 @@ Docs: https://developer.jamf.com/jamf-pro/docs/client-credentials
 
 import httpx
 
-from custom_registry import RegistrySecret, registry, secrets
+from tracecat_registry import RegistrySecret, registry, secrets
 
 jamf_secret = RegistrySecret(
     name="jamf",
@@ -25,7 +25,7 @@ jamf_secret = RegistrySecret(
     default_title="Get Jamf Pro auth token",
     description="Get an auth token for Jamf Pro API calls.",
     display_group="Jamf",
-    namespace="integrations.custom.jamf",
+    namespace="integrations.jamf",
     secrets=[jamf_secret],
 )
 async def get_auth_token() -> str:

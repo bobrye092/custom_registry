@@ -1,3 +1,3 @@
-# Custom Tracecat Registry
+# Tracecat Registry
 
- Tracecat managed actions and integrations registry.
+Tracecat managed actions and integrations registry.

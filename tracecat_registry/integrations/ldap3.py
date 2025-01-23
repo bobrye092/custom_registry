@@ -14,7 +14,7 @@ import ldap3
 import orjson
 from pydantic import Field
 
-from custom_registry import RegistrySecret, registry, secrets
+from tracecat_registry import RegistrySecret, registry, secrets
 
 ldap_secret = RegistrySecret(
     name="ldap",
@@ -134,7 +134,7 @@ def get_ldap_secrets() -> dict[str, Any]:
     default_title="Add LDAP entry",
     description="Add an entry to the LDAP directory.",
     display_group="LDAP",
-    namespace="integrations.custom.ldap",
+    namespace="integrations.ldap",
     secrets=[ldap_secret],
 )
 def add_entry(
@@ -163,7 +163,7 @@ def add_entry(
     default_title="Delete LDAP entry",
     description="Delete an entry from the LDAP directory.",
     display_group="LDAP",
-    namespace="integrations.custom.ldap",
+    namespace="integrations.ldap",
     secrets=[ldap_secret],
 )
 def delete_entry(
@@ -188,7 +188,7 @@ def delete_entry(
     default_title="Modify LDAP entry",
     description="Modify an LDAP entry in the directory.",
     display_group="LDAP",
-    namespace="integrations.custom.ldap",
+    namespace="integrations.ldap",
     secrets=[ldap_secret],
 )
 def modify_entry(
@@ -217,7 +217,7 @@ def modify_entry(
     default_title="Search LDAP directory",
     description="Search the LDAP directory for entries matching the query.",
     display_group="LDAP",
-    namespace="integrations.custom.ldap",
+    namespace="integrations.ldap",
     secrets=[ldap_secret],
 )
 def search_entries(

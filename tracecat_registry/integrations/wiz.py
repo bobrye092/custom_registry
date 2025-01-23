@@ -7,7 +7,7 @@ Docs:
 
 import httpx
 
-from custom_registry import RegistrySecret, registry, secrets
+from tracecat_registry import RegistrySecret, registry, secrets
 
 wiz_secret = RegistrySecret(
     name="wiz",
@@ -33,7 +33,7 @@ wiz_secret = RegistrySecret(
     default_title="Get Wiz auth token",
     description="Get an auth token for Wiz API calls.",
     display_group="Wiz",
-    namespace="integrations.custom.wiz",
+    namespace="integrations.wiz",
     secrets=[wiz_secret],
 )
 async def get_auth_token() -> str:

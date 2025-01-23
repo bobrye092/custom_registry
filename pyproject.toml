@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "custom_registry"
-description = "Custom tracecat managed actions and integrations registry."
+description = "Tracecat managed actions and integrations registry."
 readme = "README.md"
 requires-python = ">=3.12"
 license = "AGPL-3.0"
@@ -47,7 +47,7 @@ Documentation = "https://docs.tracecat.com"
 Repository = "https://github.com/TracecatHQ/tracecat"
 
 [tool.hatch.version]
-path = "custom_registry/__init__.py"
+path = "tracecat_registry/__init__.py"
 
 [tool.mypy]
 strict = true
