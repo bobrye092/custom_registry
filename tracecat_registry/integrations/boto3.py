@@ -84,7 +84,7 @@ async def get_session():
     default_title="Call Boto3 Client",
     description="Call a Boto3 Client method with parameters.",
     display_group="AWS",
-    namespace="integrations.aws",
+    namespace="integrations.custom.aws",
     secrets=[aws_secret],
 )
 async def call_boto3_client(
@@ -118,7 +118,7 @@ async def call_boto3_client(
     default_title="Call Boto3 Paginator",
     description="Call a Boto3 Paginator method with parameters.",
     display_group="AWS",
-    namespace="integrations.aws",
+    namespace="integrations.custom.aws",
     secrets=[aws_secret],
 )
 async def call_boto3_paginator(

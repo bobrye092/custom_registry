@@ -27,7 +27,7 @@ limacharlie_secret = RegistrySecret(
     default_title="Get Limacharlie auth token",
     description="Get an auth token for Limacharlie API calls.",
     display_group="Limacharlie",
-    namespace="integrations.limacharlie",
+    namespace="integrations.custom.limacharlie",
     secrets=[limacharlie_secret],
 )
 async def get_auth_token() -> str:

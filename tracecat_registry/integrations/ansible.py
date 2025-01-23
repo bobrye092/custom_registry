@@ -33,7 +33,7 @@ ansible_secret = RegistrySecret(
     default_title="Run Ansible Playbook",
     description="Run an Ansible playbook",
     display_group="Ansible",
-    namespace="integrations.ansible",
+    namespace="integrations.custom.ansible",
     secrets=[ansible_secret],
 )
 async def run_ansible_playbook(

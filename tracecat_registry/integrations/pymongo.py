@@ -25,7 +25,7 @@ mongodb_secret = RegistrySecret(
     default_title="Perform MongoDB CRUD",
     description="Performs a MongoDB operation on a specified collection.",
     display_group="MongoDB",
-    namespace="integrations.mongodb",
+    namespace="integrations.custom.mongodb",
     secrets=[mongodb_secret],
 )
 async def perform_mongodb_crud(

@@ -25,7 +25,7 @@ jamf_secret = RegistrySecret(
     default_title="Get Jamf Pro auth token",
     description="Get an auth token for Jamf Pro API calls.",
     display_group="Jamf",
-    namespace="integrations.jamf",
+    namespace="integrations.custom.jamf",
     secrets=[jamf_secret],
 )
 async def get_auth_token() -> str:

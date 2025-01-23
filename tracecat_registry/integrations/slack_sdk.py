@@ -20,7 +20,7 @@ slack_secret = RegistrySecret(name="slack", keys=["SLACK_BOT_TOKEN"])
     default_title="Call Slack API",
     description="Call any Slack API using the Slack Python SDK",
     display_group="Slack",
-    namespace="integrations.slack",
+    namespace="integrations.custom.slack",
     secrets=[slack_secret],
 )
 async def call_slack_api(
@@ -44,7 +44,7 @@ async def call_slack_api(
     default_title="Call Paginated Slack API",
     description="Call any Slack API that supports cursor / pagination using the Slack Python SDK and retrieve all items",
     display_group="Slack",
-    namespace="integrations.slack",
+    namespace="integrations.custom.slack",
     secrets=[slack_secret],
 )
 async def call_paginated_slack_api(

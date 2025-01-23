@@ -24,7 +24,7 @@ crowdstrike_secret = RegistrySecret(
     default_title="Call FalconPy command",
     description="Call any Crowdstrike API via FalconPy.",
     display_group="Crowdstrike",
-    namespace="integrations.crowdstrike",
+    namespace="integrations.custom.crowdstrike",
     secrets=[crowdstrike_secret],
 )
 async def call_falconpy_command(
